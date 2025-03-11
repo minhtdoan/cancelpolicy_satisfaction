@@ -10,7 +10,7 @@ Many corporate employees book hotels with pre-negotiated rates, and hotels often
 Question: Does choosing a flexible cancellation policy increase customer satisfaction?
 Challenge: Customers who choose flexible policies might differ in ways that also affect satisfaction (e.g., booking behavior, trip type). We need to separate correlation from causation.
 
-## Methods Used
+## Methods Used (*)
     1. Propensity Score Matching (PSM):
    
         a. Estimate the probability of choosing a flexible policy (propensity score) based on observed characteristics.
@@ -63,5 +63,26 @@ Overall, having a flexible cancellation policy does have a positive increase on 
 - *Using Inverse Probability Weighting, we have +0.1 satisfaction score (on the scale of 1-10) for having such a policy*
 
 However, the impact, despite being positive, might be neglectable to the travel managers. The question now becomes, is this positive impact worth the cost of having the policy? In other words, can we forgo 0.34 satisfaction impact to achieve XX amount in savings?
+
+## (*) Reasons for choosing PSM and IPW methods:
+They address the core challenge of causal inference: distinguishing correlation from causation — specifically, whether flexible cancellation policies cause higher satisfaction or whether more satisfied customers tend to choose those policies. Specifically:
+
+PSM:
+
+1. Intuitive Comparisons: PSM creates pairs of similar customers — those who chose the flexible policy and those didn’t — based on their likelihood of choosing that policy (propensity score). This gives us a direct apples-to-apples comparison.
+2. Balances Observed Covariates: By matching on propensity scores, PSM ensures that covariates like trip type, room type, and stay duration are balanced across treatment and control groups, reducing confounding.
+
+IPW:
+
+1. Keeps the Full Sample: Unlike PSM, IPW doesn’t drop observations — it keeps all data and weights each observation based on how “typical” or “atypical” their treatment choice was. This preserves statistical power.
+2. Adjusts for Confounding: By weighting based on the inverse of the probability of treatment, IPW creates a synthetic sample where treatment is independent of observed covariates — like a randomized experiment.
+3. Flexibility: It’s especially helpful when there’s good overlap but uneven distribution — like if far more customers choose flexible policies than non-flexible ones.
+4. Stabilized Weights Control Variance: Using stabilized weights reduces variance caused by extreme weights, making the estimates more reliable.
+
+Both:
+
+1. Cross validation: Results from two different methods that agree increase confidence in the findings.
+2. Different Strengths: PSM gives matched comparisons, while IPW uses all data with weighted adjustments — combining them gives a more complete perspective.
+3. Sensitivity Analysis: If the two methods give different results, it’s a signal to investigate further — perhaps indicating poor overlap, imbalance, or model misspecification.
 
 [Minh Doan][https://www.linkedin.com/in/minh-doan-8a806689/]
