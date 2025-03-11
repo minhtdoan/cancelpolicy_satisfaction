@@ -42,7 +42,7 @@ Columns in the dataset:
 
     3. Covariates:
         - STAY_DURATION: Number of nights stayed
-        - LEAD_TIME: Days between booking and check-in
+        - ROOM_TYPE: Single, double, triple, quad room
         - TRIP_TYPE: Business or leisure
         - TOTAL_SPEND: Total amount spent on the stay
 
