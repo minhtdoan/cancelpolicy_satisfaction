@@ -69,21 +69,21 @@ They address the core challenge of causal inference: distinguishing correlation 
 
 PSM:
 
-1. Intuitive Comparisons: PSM creates pairs of similar customers — those who chose the flexible policy and those didn’t — based on their likelihood of choosing that policy (propensity score). This gives us a direct apples-to-apples comparison.
-2. Balances Observed Covariates: By matching on propensity scores, PSM ensures that covariates like trip type, room type, and stay duration are balanced across treatment and control groups, reducing confounding.
+1. Intuitive comparisons: PSM creates pairs of similar customers — those who chose the flexible policy and those didn’t — based on their likelihood of choosing that policy (propensity score). This gives us a direct apples-to-apples comparison.
+2. Balances observed covariates: By matching on propensity scores, PSM ensures that covariates like trip type, room type, and stay duration are balanced across treatment and control groups, reducing confounding.
 
 IPW:
 
-1. Keeps the Full Sample: Unlike PSM, IPW doesn’t drop observations — it keeps all data and weights each observation based on how “typical” or “atypical” their treatment choice was. This preserves statistical power.
-2. Adjusts for Confounding: By weighting based on the inverse of the probability of treatment, IPW creates a synthetic sample where treatment is independent of observed covariates — like a randomized experiment.
+1. Keeps the full sample: Unlike PSM, IPW doesn’t drop observations — it keeps all data and weights each observation based on how “typical” or “atypical” their treatment choice was. This preserves statistical power.
+2. Adjusts for confounding: By weighting based on the inverse of the probability of treatment, IPW creates a synthetic sample where treatment is independent of observed covariates — like a randomized experiment.
 3. Flexibility: It’s especially helpful when there’s good overlap but uneven distribution — like if far more customers choose flexible policies than non-flexible ones.
-4. Stabilized Weights Control Variance: Using stabilized weights reduces variance caused by extreme weights, making the estimates more reliable.
+4. Stabilized weights control variance: Using stabilized weights reduces variance caused by extreme weights, making the estimates more reliable.
 
 Both:
 
 1. Cross validation: Results from two different methods that agree increase confidence in the findings.
-2. Different Strengths: PSM gives matched comparisons, while IPW uses all data with weighted adjustments — combining them gives a more complete perspective.
-3. Sensitivity Analysis: If the two methods give different results, it’s a signal to investigate further — perhaps indicating poor overlap, imbalance, or model misspecification.
+2. Different strengths: PSM gives matched comparisons, while IPW uses all data with weighted adjustments — combining them gives a more complete perspective.
+3. Sensitivity analysis: If the two methods give different results, it’s a signal to investigate further — perhaps indicating poor overlap, imbalance, or model mis-specification.
 
 Minh Doan
 https://www.linkedin.com/in/minh-doan-8a806689/
