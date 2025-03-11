@@ -85,4 +85,5 @@ Both:
 2. Different Strengths: PSM gives matched comparisons, while IPW uses all data with weighted adjustments — combining them gives a more complete perspective.
 3. Sensitivity Analysis: If the two methods give different results, it’s a signal to investigate further — perhaps indicating poor overlap, imbalance, or model misspecification.
 
-[Minh Doan][https://www.linkedin.com/in/minh-doan-8a806689/]
+Minh Doan
+https://www.linkedin.com/in/minh-doan-8a806689/
