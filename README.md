@@ -58,8 +58,9 @@ Columns in the dataset:
 ## Conclusion
 Overall, having a flexible cancellation policy does have a positive increase on the satisfaction score, compared to what the score would have been if bookings did not have access to such policy
 
-*- Using Propensity Score Matching method, we arrive at +0.34 satisfaction score (on the scale of 1-10) for having such a policy*
-*- Using Inverse Probability Weighting, we have +0.1 satisfaction score (on the scale of 1-10) for having such a policy*
+- *Using Propensity Score Matching method, we arrive at +0.34 satisfaction score (on the scale of 1-10) for having such a policy*
+
+- *Using Inverse Probability Weighting, we have +0.1 satisfaction score (on the scale of 1-10) for having such a policy*
 
 However, the impact, despite being positive, might be neglectable to the travel managers. The question now becomes, is this positive impact worth the cost of having the policy? In other words, can we forgo 0.34 satisfaction impact to achieve XX amount in savings?
 
