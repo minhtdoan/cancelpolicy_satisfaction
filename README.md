@@ -11,13 +11,17 @@ Question: Does choosing a flexible cancellation policy increase customer satisfa
 Challenge: Customers who choose flexible policies might differ in ways that also affect satisfaction (e.g., booking behavior, trip type). We need to separate correlation from causation.
 
 ### Methods Used
-1. Propensity Score Matching (PSM)
-    a. Estimate the probability of choosing a flexible policy (propensity score) based on observed characteristics.
-    b. Match customers with similar propensity scores to balance treatment and control groups.
+    1. Propensity Score Matching (PSM):
+   
+        a. Estimate the probability of choosing a flexible policy (propensity score) based on observed characteristics.
 
-2. Inverse Probability Weighting (IPW)
-    a. Weight observations by the inverse of their probability of receiving the treatment.
-    b. Stabilized weights used to reduce variance and avoid influence of extreme values.
+        b. Match customers with similar propensity scores to balance treatment and control groups.
+
+    2. Inverse Probability Weighting (IPW)
+   
+        a. Weight observations by the inverse of their probability of receiving the treatment.
+ 
+        b. Stabilized weights used to reduce variance and avoid influence of extreme values.
 
 ### Quality Checks Used
     1. Covariate Balance
