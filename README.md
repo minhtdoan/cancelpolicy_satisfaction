@@ -31,15 +31,20 @@ Challenge: Customers who choose flexible policies might differ in ways that also
     5. Stabilized Weights
     
 ### Data Used
+
 Data size: 79.5MB Rows: 983,114 Columns: 11
+
 Columns in the dataset:
+
     1. Treatment: FLEXIBLE_POLICY (1 = Flexible, 0 = Non-Flexible)
+
     2. Outcome: SATISFACTION_SCORE (Customer satisfaction rating)
+
     3. Covariates:
-          - STAY_DURATION: Number of nights stayed
-          - LEAD_TIME: Days between booking and check-in
-          - TRIP_TYPE: Business or leisure
-          - TOTAL_SPEND: Total amount spent on the stay
+        - STAY_DURATION: Number of nights stayed
+        - LEAD_TIME: Days between booking and check-in
+        - TRIP_TYPE: Business or leisure
+        - TOTAL_SPEND: Total amount spent on the stay
 
 ### Key Steps
     1. Environment Setup: Jupyter Notebook
