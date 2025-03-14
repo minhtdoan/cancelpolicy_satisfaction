@@ -88,6 +88,3 @@ Both:
 1. Cross validation: Results from two different methods that agree increase confidence in the findings.
 2. Different strengths: PSM gives matched comparisons, while IPW uses all data with weighted adjustments — combining them gives a more complete perspective.
 3. Sensitivity analysis: If the two methods give different results, it’s a signal to investigate further — perhaps indicating poor overlap, imbalance, or model mis-specification.
-
-Minh Doan
-https://www.linkedin.com/in/minh-doan-8a806689/
