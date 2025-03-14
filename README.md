@@ -23,6 +23,10 @@ Challenge: Customers who choose flexible policies might differ in ways that also
  
         b. Stabilized weights used to reduce variance and avoid influence of extreme values.
 
+*Note that Difference-in-Difference and Instrumental Values methods are not used, because:*
+- DiD: no clear cut-off date for before vs after comparison
+- IV: no good third variable (instrument) to pick from
+
 ## Quality Checks Used
     1. Covariate Balance
     2. Statistical Significance
